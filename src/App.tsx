@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import logoMarkReversed from './assets/fiki-logo-mark-reversed.png'
+import logoReversed from './assets/fiki-logo-reversed.png'
 
 const NAV_LINKS = ['Services', 'About', 'Why Us', 'Contact']
 
@@ -9,14 +11,8 @@ function Nav() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-[#081f18]/95 backdrop-blur-sm border-b border-white/10">
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-18 py-4">
         {/* Logo */}
-        <a href="#" className="flex items-center gap-3 group">
-          <div className="w-9 h-9 rounded-lg bg-[#c9973a] flex items-center justify-center">
-            <span className="text-[#081f18] font-['Outfit'] font-black text-lg leading-none">F</span>
-          </div>
-          <div>
-            <span className="text-white font-['Outfit'] font-700 text-xl tracking-tight">Fiki Solutions</span>
-            <span className="text-[#c9973a] text-xs font-['Outfit'] font-500 block leading-none -mt-0.5 tracking-widest uppercase">Limited</span>
-          </div>
+        <a href="#" className="flex items-center">
+          <img src={logoMarkReversed} alt="Fiki Solutions Limited" className="h-11 w-auto" />
         </a>
 
         {/* Desktop nav */}
@@ -587,12 +583,7 @@ function Footer() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-white/10">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-9 h-9 rounded-lg bg-[#c9973a] flex items-center justify-center">
-                <span className="text-[#081f18] font-['Outfit'] font-black text-lg">F</span>
-              </div>
-              <span className="text-white font-['Outfit'] font-700 text-lg">Fiki Solutions Limited</span>
-            </div>
+            <img src={logoReversed} alt="Fiki Solutions Limited — IT & HSSEQ Consultancy" className="w-64 h-auto mb-6" />
             <p className="text-sm leading-relaxed max-w-xs">
               Integrated IT consulting and HSSEQ management services for businesses across East Africa.
             </p>

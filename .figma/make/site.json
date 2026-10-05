@@ -1,6 +1,12 @@
 {
   "title": "Fiki Solutions Limited | IT Consulting & HSSEQ Management",
   "description": "Fiki Solutions delivers IT consulting, digital transformation and HSSEQ management expertise to help East African businesses operate safely, efficiently, and at scale.",
+  "icons": {
+    "icon": "/favicon.png"
+  },
+  "openGraph": {
+    "image": "https://fikisolutions.co.ke/og-image.png"
+  },
   "robots": {
     "index": true
   },
