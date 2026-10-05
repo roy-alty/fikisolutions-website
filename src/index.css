@@ -5,16 +5,18 @@
   --font-display: 'Outfit', sans-serif;
   --font-body: 'Inter', sans-serif;
 
-  --color-forest: #0d3b2e;
-  --color-forest-deep: #081f18;
-  --color-forest-mid: #145c45;
-  --color-forest-light: #1e7a5c;
-  --color-gold: #c9973a;
-  --color-gold-light: #e8b55a;
-  --color-gold-pale: #f5e4c0;
-  --color-sand: #f9f4ec;
+  /* Brand palette, sampled from the Fiki Solutions logo */
+  --color-navy-deep: #021a36;
+  --color-navy: #07315d;
+  --color-blue: #03488e;
+  --color-blue-light: #1f66b3;
+  --color-green: #63a832;
+  --color-green-light: #7cc046;
+  --color-green-deep: #388e38;
+  --color-green-pale: #e2f0d5;
+  --color-mist: #f4f7fb;
+  --color-cloud: #e5ecf4;
   --color-charcoal: #1a1a1a;
-  --color-mist: #e8ede9;
 }
 
 * {
@@ -27,7 +29,7 @@ html {
 
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #f9f4ec;
+  background-color: #f4f7fb;
   color: #1a1a1a;
   -webkit-font-smoothing: antialiased;
 }
@@ -44,11 +46,11 @@ h1, h2, h3, h4, h5, h6 {
   background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background: #c9973a44;
+  background: #63a83244;
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #c9973a;
+  background: #63a832;
 }
 
 .nav-link {
@@ -66,7 +68,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   width: 0;
   height: 2px;
-  background: #c9973a;
+  background: #63a832;
   transition: width 0.3s ease;
 }
 

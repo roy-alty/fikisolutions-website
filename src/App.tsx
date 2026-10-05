@@ -8,7 +8,7 @@ function Nav() {
   const [open, setOpen] = useState(false)
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-[#081f18]/95 backdrop-blur-sm border-b border-white/10">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-[#021a36]/95 backdrop-blur-sm border-b border-white/10">
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-18 py-4">
         {/* Logo */}
         <a href="#" className="flex items-center">
@@ -28,7 +28,7 @@ function Nav() {
           ))}
           <a
             href="#contact"
-            className="ml-4 bg-[#c9973a] hover:bg-[#e8b55a] text-[#081f18] font-['Outfit'] font-700 text-sm px-5 py-2.5 rounded-lg transition-colors duration-200"
+            className="ml-4 bg-[#63a832] hover:bg-[#7cc046] text-[#021a36] font-['Outfit'] font-700 text-sm px-5 py-2.5 rounded-lg transition-colors duration-200"
           >
             Get in Touch
           </a>
@@ -48,7 +48,7 @@ function Nav() {
 
       {/* Mobile menu */}
       {open && (
-        <div className="md:hidden bg-[#081f18] border-t border-white/10 px-6 py-6 flex flex-col gap-4">
+        <div className="md:hidden bg-[#021a36] border-t border-white/10 px-6 py-6 flex flex-col gap-4">
           {NAV_LINKS.map(link => (
             <a
               key={link}
@@ -62,7 +62,7 @@ function Nav() {
           <a
             href="#contact"
             onClick={() => setOpen(false)}
-            className="bg-[#c9973a] text-[#081f18] font-['Outfit'] font-700 text-sm px-5 py-3 rounded-lg text-center mt-2"
+            className="bg-[#63a832] text-[#021a36] font-['Outfit'] font-700 text-sm px-5 py-3 rounded-lg text-center mt-2"
           >
             Get in Touch
           </a>
@@ -74,7 +74,7 @@ function Nav() {
 
 function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden bg-[#081f18]">
+    <section className="relative min-h-screen flex items-center overflow-hidden bg-[#021a36]">
       {/* Background image with overlay */}
       <div className="absolute inset-0">
         <img
@@ -82,14 +82,14 @@ function Hero() {
           alt="Nairobi skyline"
           className="w-full h-full object-cover opacity-25"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#081f18] via-[#081f18]/80 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#081f18] via-transparent to-[#081f18]/60" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#021a36] via-[#021a36]/80 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#021a36] via-transparent to-[#021a36]/60" />
       </div>
 
       {/* Decorative grid lines */}
       <div className="absolute inset-0 opacity-5">
         <div className="w-full h-full" style={{
-          backgroundImage: 'linear-gradient(#c9973a 1px, transparent 1px), linear-gradient(90deg, #c9973a 1px, transparent 1px)',
+          backgroundImage: 'linear-gradient(#63a832 1px, transparent 1px), linear-gradient(90deg, #63a832 1px, transparent 1px)',
           backgroundSize: '80px 80px'
         }} />
       </div>
@@ -97,15 +97,15 @@ function Hero() {
       <div className="relative max-w-7xl mx-auto px-6 pt-32 pb-24 grid lg:grid-cols-2 gap-12 items-center">
         <div>
           {/* Label */}
-          <div className="inline-flex items-center gap-2 bg-[#c9973a]/15 border border-[#c9973a]/30 rounded-full px-4 py-1.5 mb-8">
-            <div className="w-1.5 h-1.5 rounded-full bg-[#c9973a] animate-pulse" />
-            <span className="text-[#c9973a] font-['Outfit'] font-500 text-xs tracking-widest uppercase">Nairobi, Kenya</span>
+          <div className="inline-flex items-center gap-2 bg-[#63a832]/15 border border-[#63a832]/30 rounded-full px-4 py-1.5 mb-8">
+            <div className="w-1.5 h-1.5 rounded-full bg-[#63a832] animate-pulse" />
+            <span className="text-[#63a832] font-['Outfit'] font-500 text-xs tracking-widest uppercase">Nairobi, Kenya</span>
           </div>
 
           <h1 className="text-5xl lg:text-7xl font-['Outfit'] font-800 text-white leading-[1.05] mb-6">
             Integrated
             <br />
-            <span className="text-[#c9973a]">Solutions</span>
+            <span className="text-[#63a832]">Solutions</span>
             <br />
             for East Africa
           </h1>
@@ -117,7 +117,7 @@ function Hero() {
           <div className="flex flex-wrap gap-4">
             <a
               href="#services"
-              className="bg-[#c9973a] hover:bg-[#e8b55a] text-[#081f18] font-['Outfit'] font-700 px-7 py-3.5 rounded-lg transition-all duration-200 hover:shadow-lg hover:shadow-[#c9973a]/30"
+              className="bg-[#63a832] hover:bg-[#7cc046] text-[#021a36] font-['Outfit'] font-700 px-7 py-3.5 rounded-lg transition-all duration-200 hover:shadow-lg hover:shadow-[#63a832]/30"
             >
               Explore Services
             </a>
@@ -137,7 +137,7 @@ function Hero() {
               { num: '50+', label: 'Clients Served' },
             ].map(s => (
               <div key={s.label}>
-                <div className="stat-num text-3xl text-[#c9973a]">{s.num}</div>
+                <div className="stat-num text-3xl text-[#63a832]">{s.num}</div>
                 <div className="text-white/50 text-xs font-['Outfit'] font-400 mt-1 uppercase tracking-wide">{s.label}</div>
               </div>
             ))}
@@ -167,10 +167,10 @@ function Hero() {
               <p className="text-white/55 text-sm leading-relaxed">{card.desc}</p>
             </div>
           ))}
-          <div className="bg-[#c9973a]/15 border border-[#c9973a]/30 rounded-2xl p-6">
+          <div className="bg-[#63a832]/15 border border-[#63a832]/30 rounded-2xl p-6">
             <div className="flex items-center gap-3 mb-3">
-              <div className="w-2 h-2 rounded-full bg-[#c9973a]" />
-              <span className="text-[#c9973a] font-['Outfit'] font-600 text-sm">Based in Nairobi</span>
+              <div className="w-2 h-2 rounded-full bg-[#63a832]" />
+              <span className="text-[#63a832] font-['Outfit'] font-600 text-sm">Based in Nairobi</span>
             </div>
             <p className="text-white/65 text-sm">Serving clients across Kenya and East Africa from our Nairobi headquarters.</p>
             <div className="mt-4 text-white/40 text-xs font-['Outfit'] tracking-wider">P.O. Box 3444-00100 · Nairobi</div>
@@ -231,23 +231,23 @@ function Services() {
   const [tab, setTab] = useState<'it' | 'hsseq'>('it')
 
   return (
-    <section id="services" className="bg-[#f9f4ec] py-28">
+    <section id="services" className="bg-[#f4f7fb] py-28">
       <div className="max-w-7xl mx-auto px-6">
         {/* Section header */}
         <div className="max-w-2xl mb-16">
-          <div className="inline-flex items-center gap-2 bg-[#0d3b2e]/10 rounded-full px-4 py-1.5 mb-6">
-            <span className="text-[#0d3b2e] font-['Outfit'] font-500 text-xs tracking-widest uppercase">What We Do</span>
+          <div className="inline-flex items-center gap-2 bg-[#07315d]/10 rounded-full px-4 py-1.5 mb-6">
+            <span className="text-[#07315d] font-['Outfit'] font-500 text-xs tracking-widest uppercase">What We Do</span>
           </div>
-          <h2 className="text-4xl lg:text-5xl font-['Outfit'] font-800 text-[#081f18] leading-tight mb-5">
+          <h2 className="text-4xl lg:text-5xl font-['Outfit'] font-800 text-[#021a36] leading-tight mb-5">
             Two Disciplines,<br />One Trusted Partner
           </h2>
-          <p className="text-[#081f18]/60 text-lg leading-relaxed">
+          <p className="text-[#021a36]/60 text-lg leading-relaxed">
             We bring together IT consulting depth and HSSEQ specialisation so your organisation can grow without compromising safety or operational excellence.
           </p>
         </div>
 
         {/* Tab switcher */}
-        <div className="inline-flex rounded-xl bg-[#0d3b2e]/8 p-1 mb-12">
+        <div className="inline-flex rounded-xl bg-[#07315d]/8 p-1 mb-12">
           {([
             { key: 'it', label: 'IT Consulting' },
             { key: 'hsseq', label: 'HSSEQ Management' },
@@ -257,8 +257,8 @@ function Services() {
               onClick={() => setTab(t.key)}
               className={`px-6 py-2.5 rounded-lg font-['Outfit'] font-600 text-sm transition-all duration-200 ${
                 tab === t.key
-                  ? 'bg-[#0d3b2e] text-white shadow-sm'
-                  : 'text-[#0d3b2e]/60 hover:text-[#0d3b2e]'
+                  ? 'bg-[#07315d] text-white shadow-sm'
+                  : 'text-[#07315d]/60 hover:text-[#07315d]'
               }`}
             >
               {t.label}
@@ -271,27 +271,27 @@ function Services() {
           {(tab === 'it' ? IT_SERVICES : HSSEQ_SERVICES).map((s, i) => (
             <div
               key={s.title}
-              className="service-card bg-white rounded-2xl p-7 border border-[#0d3b2e]/8 hover:shadow-xl hover:shadow-[#0d3b2e]/10 cursor-default"
+              className="service-card bg-white rounded-2xl p-7 border border-[#07315d]/8 hover:shadow-xl hover:shadow-[#07315d]/10 cursor-default"
               style={{ animationDelay: `${i * 50}ms` }}
             >
-              <div className="w-12 h-12 rounded-xl bg-[#0d3b2e]/8 flex items-center justify-center text-2xl mb-5">
+              <div className="w-12 h-12 rounded-xl bg-[#07315d]/8 flex items-center justify-center text-2xl mb-5">
                 {s.icon}
               </div>
-              <h3 className="font-['Outfit'] font-700 text-[#081f18] text-lg mb-3 leading-tight">{s.title}</h3>
-              <p className="text-[#081f18]/55 text-sm leading-relaxed">{s.desc}</p>
+              <h3 className="font-['Outfit'] font-700 text-[#021a36] text-lg mb-3 leading-tight">{s.title}</h3>
+              <p className="text-[#021a36]/55 text-sm leading-relaxed">{s.desc}</p>
             </div>
           ))}
         </div>
 
         {/* CTA strip */}
-        <div className="mt-12 bg-[#0d3b2e] rounded-2xl p-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+        <div className="mt-12 bg-[#07315d] rounded-2xl p-8 flex flex-col sm:flex-row items-center justify-between gap-6">
           <div>
             <h3 className="font-['Outfit'] font-700 text-white text-xl mb-1">Need a custom solution?</h3>
             <p className="text-white/55 text-sm">Talk to our team about your specific requirements.</p>
           </div>
           <a
             href="#contact"
-            className="shrink-0 bg-[#c9973a] hover:bg-[#e8b55a] text-[#081f18] font-['Outfit'] font-700 px-7 py-3.5 rounded-xl transition-colors duration-200 whitespace-nowrap"
+            className="shrink-0 bg-[#63a832] hover:bg-[#7cc046] text-[#021a36] font-['Outfit'] font-700 px-7 py-3.5 rounded-xl transition-colors duration-200 whitespace-nowrap"
           >
             Start a Conversation
           </a>
@@ -303,19 +303,19 @@ function Services() {
 
 function About() {
   return (
-    <section id="about" className="bg-[#0d3b2e] py-28 overflow-hidden">
+    <section id="about" className="bg-[#07315d] py-28 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
         {/* Image collage */}
         <div className="relative">
           <div className="grid grid-cols-2 gap-4">
-            <div className="rounded-2xl overflow-hidden h-64 bg-[#145c45]">
+            <div className="rounded-2xl overflow-hidden h-64 bg-[#03488e]">
               <img
                 src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=600&h=500&fit=crop&auto=format"
                 alt="IT consulting team"
                 className="w-full h-full object-cover opacity-85"
               />
             </div>
-            <div className="rounded-2xl overflow-hidden h-64 mt-8 bg-[#145c45]">
+            <div className="rounded-2xl overflow-hidden h-64 mt-8 bg-[#03488e]">
               <img
                 src="https://images.unsplash.com/photo-1740825961434-e9287638592b?w=600&h=500&fit=crop&auto=format"
                 alt="Construction safety workers"
@@ -325,9 +325,9 @@ function About() {
           </div>
 
           {/* Badge overlay */}
-          <div className="absolute -bottom-4 left-6 bg-[#c9973a] rounded-2xl px-6 py-4 shadow-xl">
-            <div className="stat-num text-[#081f18] text-4xl">15+</div>
-            <div className="text-[#081f18]/80 text-xs font-['Outfit'] font-600 uppercase tracking-wider mt-0.5">Years in Practice</div>
+          <div className="absolute -bottom-4 left-6 bg-[#63a832] rounded-2xl px-6 py-4 shadow-xl">
+            <div className="stat-num text-[#021a36] text-4xl">15+</div>
+            <div className="text-[#021a36]/80 text-xs font-['Outfit'] font-600 uppercase tracking-wider mt-0.5">Years in Practice</div>
           </div>
         </div>
 
@@ -356,8 +356,8 @@ function About() {
               'Hands-on technical training',
             ].map(item => (
               <div key={item} className="flex items-start gap-3">
-                <div className="w-5 h-5 rounded-full bg-[#c9973a]/20 border border-[#c9973a]/40 flex items-center justify-center shrink-0 mt-0.5">
-                  <div className="w-1.5 h-1.5 rounded-full bg-[#c9973a]" />
+                <div className="w-5 h-5 rounded-full bg-[#63a832]/20 border border-[#63a832]/40 flex items-center justify-center shrink-0 mt-0.5">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#63a832]" />
                 </div>
                 <span className="text-white/70 text-sm leading-snug">{item}</span>
               </div>
@@ -371,16 +371,16 @@ function About() {
 
 function WhyUs() {
   return (
-    <section id="why-us" className="bg-[#f9f4ec] py-28">
+    <section id="why-us" className="bg-[#f4f7fb] py-28">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 bg-[#0d3b2e]/10 rounded-full px-4 py-1.5 mb-6">
-            <span className="text-[#0d3b2e] font-['Outfit'] font-500 text-xs tracking-widest uppercase">Why Choose Us</span>
+          <div className="inline-flex items-center gap-2 bg-[#07315d]/10 rounded-full px-4 py-1.5 mb-6">
+            <span className="text-[#07315d] font-['Outfit'] font-500 text-xs tracking-widest uppercase">Why Choose Us</span>
           </div>
-          <h2 className="text-4xl lg:text-5xl font-['Outfit'] font-800 text-[#081f18] leading-tight mb-5">
+          <h2 className="text-4xl lg:text-5xl font-['Outfit'] font-800 text-[#021a36] leading-tight mb-5">
             The Fiki Difference
           </h2>
-          <p className="text-[#081f18]/60 text-lg">
+          <p className="text-[#021a36]/60 text-lg">
             We're not a generalist consultancy. We are specialists who have spent years perfecting the intersection of technology and workplace safety.
           </p>
         </div>
@@ -418,10 +418,10 @@ function WhyUs() {
               desc: 'A lean, senior team means faster decisions, direct communication, and no junior staff learning on your project.',
             },
           ].map(item => (
-            <div key={item.num} className="group p-8 rounded-2xl border border-[#0d3b2e]/12 hover:bg-[#0d3b2e] transition-colors duration-300 cursor-default">
-              <div className="text-[#c9973a] font-['Outfit'] font-800 text-4xl mb-5 group-hover:text-[#e8b55a] transition-colors">{item.num}</div>
-              <h3 className="font-['Outfit'] font-700 text-[#081f18] text-lg mb-3 group-hover:text-white transition-colors">{item.title}</h3>
-              <p className="text-[#081f18]/55 text-sm leading-relaxed group-hover:text-white/65 transition-colors">{item.desc}</p>
+            <div key={item.num} className="group p-8 rounded-2xl border border-[#07315d]/12 hover:bg-[#07315d] transition-colors duration-300 cursor-default">
+              <div className="text-[#388e38] font-['Outfit'] font-800 text-4xl mb-5 group-hover:text-[#7cc046] transition-colors">{item.num}</div>
+              <h3 className="font-['Outfit'] font-700 text-[#021a36] text-lg mb-3 group-hover:text-white transition-colors">{item.title}</h3>
+              <p className="text-[#021a36]/55 text-sm leading-relaxed group-hover:text-white/65 transition-colors">{item.desc}</p>
             </div>
           ))}
         </div>
@@ -432,24 +432,24 @@ function WhyUs() {
 
 function CTA() {
   return (
-    <section className="bg-[#081f18] py-24 relative overflow-hidden">
+    <section className="bg-[#021a36] py-24 relative overflow-hidden">
       <div className="absolute inset-0 opacity-5">
         <div className="w-full h-full" style={{
-          backgroundImage: 'radial-gradient(circle, #c9973a 1px, transparent 1px)',
+          backgroundImage: 'radial-gradient(circle, #63a832 1px, transparent 1px)',
           backgroundSize: '40px 40px'
         }} />
       </div>
       <div className="relative max-w-4xl mx-auto px-6 text-center">
         <h2 className="text-4xl lg:text-6xl font-['Outfit'] font-800 text-white mb-6 leading-tight">
           Ready to Work<br />
-          <span className="text-[#c9973a]">With the Best?</span>
+          <span className="text-[#63a832]">With the Best?</span>
         </h2>
         <p className="text-white/60 text-xl mb-10 leading-relaxed">
           Whether you need an IT overhaul or a full HSSEQ audit, let's talk about how Fiki Solutions can help your organisation thrive.
         </p>
         <a
           href="#contact"
-          className="inline-block bg-[#c9973a] hover:bg-[#e8b55a] text-[#081f18] font-['Outfit'] font-700 px-10 py-4 rounded-xl text-lg transition-all duration-200 hover:shadow-xl hover:shadow-[#c9973a]/30"
+          className="inline-block bg-[#63a832] hover:bg-[#7cc046] text-[#021a36] font-['Outfit'] font-700 px-10 py-4 rounded-xl text-lg transition-all duration-200 hover:shadow-xl hover:shadow-[#63a832]/30"
         >
           Get a Free Consultation
         </a>
@@ -468,17 +468,17 @@ function Contact() {
   }
 
   return (
-    <section id="contact" className="bg-[#f9f4ec] py-28">
+    <section id="contact" className="bg-[#f4f7fb] py-28">
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16">
         {/* Info */}
         <div>
-          <div className="inline-flex items-center gap-2 bg-[#0d3b2e]/10 rounded-full px-4 py-1.5 mb-7">
-            <span className="text-[#0d3b2e] font-['Outfit'] font-500 text-xs tracking-widest uppercase">Contact Us</span>
+          <div className="inline-flex items-center gap-2 bg-[#07315d]/10 rounded-full px-4 py-1.5 mb-7">
+            <span className="text-[#07315d] font-['Outfit'] font-500 text-xs tracking-widest uppercase">Contact Us</span>
           </div>
-          <h2 className="text-4xl lg:text-5xl font-['Outfit'] font-800 text-[#081f18] leading-tight mb-6">
+          <h2 className="text-4xl lg:text-5xl font-['Outfit'] font-800 text-[#021a36] leading-tight mb-6">
             Let's Build<br />Something Together
           </h2>
-          <p className="text-[#081f18]/60 text-lg leading-relaxed mb-12">
+          <p className="text-[#021a36]/60 text-lg leading-relaxed mb-12">
             Reach out to discuss your requirements. Our team typically responds within one business day.
           </p>
 
@@ -489,12 +489,12 @@ function Contact() {
               { icon: '✉️', label: 'Email', value: 'info@fikisolutions.co.ke' },
             ].map(c => (
               <div key={c.label} className="flex items-start gap-4">
-                <div className="w-11 h-11 rounded-xl bg-[#0d3b2e] flex items-center justify-center text-lg shrink-0">
+                <div className="w-11 h-11 rounded-xl bg-[#07315d] flex items-center justify-center text-lg shrink-0">
                   {c.icon}
                 </div>
                 <div>
-                  <div className="text-xs font-['Outfit'] font-600 text-[#0d3b2e]/50 uppercase tracking-wider mb-0.5">{c.label}</div>
-                  <div className="text-[#081f18] font-['Inter'] font-400 text-sm">{c.value}</div>
+                  <div className="text-xs font-['Outfit'] font-600 text-[#07315d]/50 uppercase tracking-wider mb-0.5">{c.label}</div>
+                  <div className="text-[#021a36] font-['Inter'] font-400 text-sm">{c.value}</div>
                 </div>
               </div>
             ))}
@@ -502,12 +502,12 @@ function Contact() {
         </div>
 
         {/* Form */}
-        <div className="bg-white rounded-2xl p-8 border border-[#0d3b2e]/8 shadow-sm">
+        <div className="bg-white rounded-2xl p-8 border border-[#07315d]/8 shadow-sm">
           {sent ? (
             <div className="h-full flex flex-col items-center justify-center text-center py-12">
-              <div className="w-16 h-16 rounded-full bg-[#0d3b2e]/10 flex items-center justify-center text-3xl mb-5">✅</div>
-              <h3 className="font-['Outfit'] font-700 text-[#081f18] text-2xl mb-3">Message Sent!</h3>
-              <p className="text-[#081f18]/55 text-sm leading-relaxed max-w-xs">
+              <div className="w-16 h-16 rounded-full bg-[#07315d]/10 flex items-center justify-center text-3xl mb-5">✅</div>
+              <h3 className="font-['Outfit'] font-700 text-[#021a36] text-2xl mb-3">Message Sent!</h3>
+              <p className="text-[#021a36]/55 text-sm leading-relaxed max-w-xs">
                 Thank you for reaching out. A member of our team will be in touch within one business day.
               </p>
             </div>
@@ -515,34 +515,34 @@ function Contact() {
             <form onSubmit={handleSubmit} className="space-y-5">
               <div className="grid sm:grid-cols-2 gap-5">
                 <div>
-                  <label className="block text-xs font-['Outfit'] font-600 text-[#0d3b2e] uppercase tracking-wider mb-2">Name</label>
+                  <label className="block text-xs font-['Outfit'] font-600 text-[#07315d] uppercase tracking-wider mb-2">Name</label>
                   <input
                     type="text"
                     required
                     value={form.name}
                     onChange={e => setForm({ ...form, name: e.target.value })}
                     placeholder="Jane Mwangi"
-                    className="w-full border border-[#0d3b2e]/15 rounded-xl px-4 py-3 text-sm font-['Inter'] text-[#081f18] placeholder-[#081f18]/30 focus:outline-none focus:border-[#c9973a] focus:ring-2 focus:ring-[#c9973a]/20 transition-all"
+                    className="w-full border border-[#07315d]/15 rounded-xl px-4 py-3 text-sm font-['Inter'] text-[#021a36] placeholder-[#021a36]/30 focus:outline-none focus:border-[#63a832] focus:ring-2 focus:ring-[#63a832]/20 transition-all"
                   />
                 </div>
                 <div>
-                  <label className="block text-xs font-['Outfit'] font-600 text-[#0d3b2e] uppercase tracking-wider mb-2">Email</label>
+                  <label className="block text-xs font-['Outfit'] font-600 text-[#07315d] uppercase tracking-wider mb-2">Email</label>
                   <input
                     type="email"
                     required
                     value={form.email}
                     onChange={e => setForm({ ...form, email: e.target.value })}
                     placeholder="jane@company.co.ke"
-                    className="w-full border border-[#0d3b2e]/15 rounded-xl px-4 py-3 text-sm font-['Inter'] text-[#081f18] placeholder-[#081f18]/30 focus:outline-none focus:border-[#c9973a] focus:ring-2 focus:ring-[#c9973a]/20 transition-all"
+                    className="w-full border border-[#07315d]/15 rounded-xl px-4 py-3 text-sm font-['Inter'] text-[#021a36] placeholder-[#021a36]/30 focus:outline-none focus:border-[#63a832] focus:ring-2 focus:ring-[#63a832]/20 transition-all"
                   />
                 </div>
               </div>
               <div>
-                <label className="block text-xs font-['Outfit'] font-600 text-[#0d3b2e] uppercase tracking-wider mb-2">Service of Interest</label>
+                <label className="block text-xs font-['Outfit'] font-600 text-[#07315d] uppercase tracking-wider mb-2">Service of Interest</label>
                 <select
                   value={form.service}
                   onChange={e => setForm({ ...form, service: e.target.value })}
-                  className="w-full border border-[#0d3b2e]/15 rounded-xl px-4 py-3 text-sm font-['Inter'] text-[#081f18] focus:outline-none focus:border-[#c9973a] focus:ring-2 focus:ring-[#c9973a]/20 transition-all bg-white"
+                  className="w-full border border-[#07315d]/15 rounded-xl px-4 py-3 text-sm font-['Inter'] text-[#021a36] focus:outline-none focus:border-[#63a832] focus:ring-2 focus:ring-[#63a832]/20 transition-all bg-white"
                 >
                   <option value="">Select a service…</option>
                   <option>IT Consulting</option>
@@ -552,19 +552,19 @@ function Contact() {
                 </select>
               </div>
               <div>
-                <label className="block text-xs font-['Outfit'] font-600 text-[#0d3b2e] uppercase tracking-wider mb-2">Message</label>
+                <label className="block text-xs font-['Outfit'] font-600 text-[#07315d] uppercase tracking-wider mb-2">Message</label>
                 <textarea
                   required
                   rows={4}
                   value={form.message}
                   onChange={e => setForm({ ...form, message: e.target.value })}
                   placeholder="Tell us about your project or challenge…"
-                  className="w-full border border-[#0d3b2e]/15 rounded-xl px-4 py-3 text-sm font-['Inter'] text-[#081f18] placeholder-[#081f18]/30 focus:outline-none focus:border-[#c9973a] focus:ring-2 focus:ring-[#c9973a]/20 transition-all resize-none"
+                  className="w-full border border-[#07315d]/15 rounded-xl px-4 py-3 text-sm font-['Inter'] text-[#021a36] placeholder-[#021a36]/30 focus:outline-none focus:border-[#63a832] focus:ring-2 focus:ring-[#63a832]/20 transition-all resize-none"
                 />
               </div>
               <button
                 type="submit"
-                className="w-full bg-[#0d3b2e] hover:bg-[#145c45] text-white font-['Outfit'] font-700 py-3.5 rounded-xl transition-colors duration-200 text-sm"
+                className="w-full bg-[#07315d] hover:bg-[#03488e] text-white font-['Outfit'] font-700 py-3.5 rounded-xl transition-colors duration-200 text-sm"
               >
                 Send Message
               </button>
@@ -578,7 +578,7 @@ function Contact() {
 
 function Footer() {
   return (
-    <footer className="bg-[#081f18] text-white/55 py-12">
+    <footer className="bg-[#021a36] text-white/55 py-12">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-white/10">
           {/* Brand */}
